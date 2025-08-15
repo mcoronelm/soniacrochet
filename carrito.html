@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+ <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                <a href="../paginas/index.html">
+                <img src="../img/Sonia Crochet_WB.png" alt="Logo Sonia Crochet Art" class="logo-img">
+                </a>
+            </div>
+                <ul class="nav-links">
+                    
+                     <li><a href="../paginas/empresa.html">empresa</a></li>
+                    <li><a href="../paginas/servicios.html">servicios</a></li>
+                    <!--<li><a href="productos.html">productos</a></li>-->
+                    <div class="dropdown">
+                        <button class="dropbtn">productos</button>
+                        <div class="dropdown-content">
+                          <a href="../paginas/jerseys.html">jerseys</a>
+                          <a href="../paginas/sombreros.html">sombreros</a>
+                          <a href="../paginas/bufandas.html">bufandas</a>
+                        </div>
+                    </div>
+                    <li><a href="../paginas/contacto.html">contacto</a></li>
+                    <div class="fav-container">
+                        <a href="../paginas/favoritos.html">
+                            <img src="../img/heart.png" alt="favoritos" class="fav-img">
+                        </a>
+                    </div>
+                    <div class="fav-container">
+                        <a href="../paginas/carrito.html">
+                            <img src="../img/grocery-store.png" alt="favoritos" class="fav-img">
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+  <main>
+        <div class="cart-container">
+            <div class="cart-items">
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-cell">
+                                <img src="../img/sueter1.png" class="product-img">
+                                <div>
+                                    <h3>Suéter Clásico</h3>
+                                    <p>Talla: M · Color: Negro</p>
+                                </div>
+                            </td>
+                            <td>$45.000</td>
+                            <td>
+                                <div class="quantity-selector">
+                                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                </div>
+                            </td>
+                            <td>$45.000</td>
+                            <td><a href="#" class="btn-remove">✕</a></td>
+                        </tr>
+                        <tr>
+                            <td class="product-cell">
+                                <img src="../img/sombrero1.png" class="product-img">
+                                <div>
+                                    <h3>Sombrero de Verano</h3>
+                                    <p>Talla: Única · Color: Beige</p>
+                                </div>
+                            </td>
+                            <td>$35.000</td>
+                            <td>
+                                <div class="quantity-selector">
+                                    <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                                    <input type="number" value="1" min="1">
+                                    <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                                </div>
+                            </td>
+                            <td>$35.000</td>
+                            <td><a href="#" class="btn-remove">✕</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="cart-summary">
+                <h3>Resumen del Pedido</h3>
+                
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>$80.000</span>
+                </div>
+                
+                <div class="summary-row">
+                    <span>Envío</span>
+                    <span>$8.000</span>
+                </div>
+                
+                <div class="summary-row summary-total">
+                    <span>Total</span>
+                    <span>$88.000</span>
+                </div>
+                
+                <a href="../paginas/checkout.html" class="btn-checkout">Proceder al pago</a>
+                <a href="../paginas/jerseys.html" class="btn-continue">Continuar comprando</a>
+            </div>
+        </div>
+    </main>
+  <footer class="footer">
+        <div class="descripcion">
+            <p><strong>Soniacrochetart</strong>
+        </div>
+        <div class="redes">
+            <a href="#"><img src="../img/socials.png" alt="Facebook"></a>
+        </div>
+        <div class="subscribe">
+            <input type="email" placeholder="email...">
+            <form action="../paginas/contacto.html">
+                <button class="btn">Suscríbete</button>
+            </form>
+            
+        </div>
+    </footer>
+</body>
+</html>

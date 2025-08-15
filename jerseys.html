@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonia Crochet Art - Producto</title>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                <a href="../paginas/index.html">
+                <img src="../img/Sonia Crochet_WB.png" alt="Logo Sonia Crochet Art" class="logo-img">
+                </a>
+            </div>
+                <ul class="nav-links">
+                    
+                     <li><a href="../paginas/empresa.html">empresa</a></li>
+                    <li><a href="../paginas/servicios.html">servicios</a></li>
+                    <!--<li><a href="productos.html">productos</a></li>-->
+                    <div class="dropdown">
+                        <button class="dropbtn">productos</button>
+                        <div class="dropdown-content">
+                          <a href="../paginas/jerseys.html">jerseys</a>
+                          <a href="../paginas/sombreros.html">sombreros</a>
+                          <a href="../paginas/bufandas.html">bufandas</a>
+                        </div>
+                    </div>
+                    <li><a href="../paginas/contacto.html">contacto</a></li>
+                    <div class="fav-container">
+                        <a href="../paginas/favoritos.html">
+                            <img src="../img/heart.png" alt="favoritos" class="fav-img">
+                        </a>
+                    </div>
+                    <div class="fav-container">
+                        <a href="../paginas/carrito.html">
+                            <img src="../img/grocery-store.png" alt="favoritos" class="fav-img">
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main>
+        <div class="producto-container">
+            <div class="producto-info">
+                <h2>Suéter de Crochet Artesanal</h2>
+                <div class="precio">$45.000</div>
+                
+                <div class="descripcion">
+                    <p>Suéter tejido a mano con lana 100% natural. Diseño único con detalles artesanales.</p>
+                </div>
+                
+                <div class="opciones">
+                    <div class="color">
+                        <label>Color</label>
+                    <div class="opciones-color">
+                        <span class="color-opcion" style="background-color:#1b1e20;"></span>
+                        <span class="color-opcion" style="background-color:#8db0be;"></span>
+                        <span class="color-opcion" style="background-color:#e1c1a3;"></span>
+                        <span class="color-opcion" style="background-color:#d36d5e;"></span>
+                    </div>
+                </div>
+                    
+                    <div class="talla">
+                        <h4>Talla</h4>
+                        <div class="size-options">
+                            <span>S</span>
+                            <span class="activo">M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="form-compra" action="../paginas/carrito.html" method="get">
+                    <div class="cantidad-selector">
+                        <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                        <input type="number" name="cantidad" value="1" min="1">
+                        <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                    </div>
+                    
+                    <button type="submit" class="btn-carrito">Añadir al carrito</button>
+                    <a href="../paginas/favoritos.html" class="btn-favorito">❤️ Guardar</a>
+                </form>
+            </div>
+            
+            <div class="producto-imagen">
+                <div class="galeria-contenedor">
+                    <!-- Marcadores para navegación -->
+                    <div id="slide1" class="nav-slide"></div>
+                    <div id="slide2" class="nav-slide"></div>
+                    <div id="slide3" class="nav-slide"></div>
+                    
+                    <!-- Contenedor de imágenes -->
+                    <div class="producto-imagenes">
+                        <div class="imagen-producto">
+                            <img src="../img/sueter1.png" alt="Suéter frontal">
+                        </div>
+                        <div class="imagen-producto">
+                            <img src="../img/sueter2.png" alt="Suéter lateral">
+                        </div>
+                        <div class="imagen-producto">
+                            <img src="../img/sueter3.png" alt="Suéter detalle">
+                        </div>
+                    </div>
+                    
+                    <!-- Controles de navegación -->
+                    <div class="miniaturas">
+                        <a href="#slide1"><img src="../img/sueter1.png" class="miniatura activa"></a>
+                        <a href="#slide2"><img src="../img/sueter2.png" class="miniatura"></a>
+                        <a href="#slide3"><img src="../img/sueter3.png" class="miniatura"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="descripcion">
+            <p><strong>Soniacrochetart</strong></p>
+        </div>
+        <div class="redes">
+            <a href="#"><img src="../img/socials.png" alt="Facebook"></a>
+        </div>
+        <div class="subscribe">
+            <input type="email" placeholder="email...">
+            <form action="../paginas/contacto.html">
+                <button class="btn">Suscríbete</button>
+            </form>
+            
+        </div>
+    </footer>
+</body>
+</html>

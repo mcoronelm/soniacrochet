@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonia Crochet Art - Tejiendo ilusiones</title>
+    <style>
+/* CONTACTO */
+.main-contacto button {
+  overflow: visible;
+}
+
+.main-contacto button,
+.main-contacto select {
+  text-transform: none;
+}
+
+.main-contacto button,
+.main-contacto input,
+.main-contacto select,
+.main-contacto textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+.main-contacto input {
+  line-height: normal;
+}
+
+.main-contacto textarea {
+  overflow: auto;
+}
+
+.main-contacto #container {
+  border: solid 3px #748482;
+  background-color: #FFFBEF;
+  max-width: 768px;
+  margin: 5px auto;
+  position: relative;
+}
+
+.main-contacto form {
+  padding: 0 37.5px 37.5px;
+  margin: 15px 0;
+}
+
+.main-contacto .email_contacto {
+  float: right;
+  width: 45%;
+}
+
+.main-contacto input[type='text'],
+.main-contacto input[type='email'],
+.main-contacto select,
+.main-contacto textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #748482;
+  color: #727171;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.main-contacto input[type='text']:focus,
+.main-contacto input[type='email']:focus,
+.main-contacto textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.main-contacto .message {
+  float: none;
+}
+
+.main-contacto .nombre_contacto {
+  float: left;
+  width: 45%;
+}
+
+.main-contacto select {
+  background: #FFFBEF;
+  outline: none;
+}
+
+.main-contacto .subject {
+  width: 100%;
+}
+
+.main-contacto .telefono_contacto {
+  width: 100%;
+}
+
+.main-contacto textarea {
+  line-height: 150%;
+  width: 100%;
+}
+
+.main-contacto .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f5a623;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main-contacto #form_button {
+  background: none;
+  border: solid 2px #e4a058;
+  color: #e4a058;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+}
+
+.main-contacto #form_button:hover {
+  background: #663510;
+  color: #F2F3EB;
+}
+
+.main-contacto #form_button {
+  padding: 15px 25px;
+}
+
+.main-contacto input[type='text'],
+.main-contacto input[type='email'],
+.main-contacto select,
+.main-contacto textarea {
+  font-size: 0.875em;
+}
+
+.main-contacto .imagen-animada {
+    text-align: center;
+    height: auto;
+    margin: auto;
+}
+
+.main-contacto #gato {
+    transition: 3s;
+        }
+
+.main-contacto #gato:hover{
+    transform: rotatey(360deg) scaleZ(2);
+        }
+
+    </style>
+</head>
+<body>
+        <header>
+        <div class="container">
+            <nav>
+                <div class="logo-container">
+                <a href="../paginas/index.html">
+                <img src="../img/Sonia Crochet_WB.png" alt="Logo Sonia Crochet Art" class="logo-img">
+                </a>
+            </div>
+                <ul class="nav-links">
+                    
+                     <li><a href="../paginas/empresa.html">empresa</a></li>
+                    <li><a href="../paginas/servicios.html">servicios</a></li>
+                    <!--<li><a href="productos.html">productos</a></li>-->
+                    <div class="dropdown">
+                        <button class="dropbtn">productos</button>
+                        <div class="dropdown-content">
+                          <a href="../paginas/jerseys.html">jerseys</a>
+                          <a href="../paginas/sombreros.html">sombreros</a>
+                          <a href="../paginas/bufandas.html">bufandas</a>
+                        </div>
+                    </div>
+                    <li><a href="../paginas/contacto.html">contacto</a></li>
+                   <div class="fav-container">
+                        <a href="../paginas/favoritos.html">
+                            <img src="../img/heart.png" alt="favoritos" class="fav-img">
+                        </a>
+                    </div>
+                    <div class="fav-container">
+                        <a href="../paginas/carrito.html">
+                            <img src="../img/grocery-store.png" alt="favoritos" class="fav-img">
+                        </a>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <div class="main-contacto">
+        <div id="container">
+        
+            <h1 style="color: #e4a058; background-color: #fffbef; text-align:center">&bull; ¡Escríbenos! &bull;</h1>
+        
+            <figure class="imagen-animada">
+            <img src="../img/Sonia Crochet_Sticker_BB.png" width="20%" height="14%" alt="Plantación de café en Colombia" id="gato">
+            </figure>
+    
+            </section>
+            <form action="#">
+            <div class="nombre_contacto">
+                <label for="name"></label>
+                <input type="text" placeholder="Nombre" name="name" id="name_input" required>
+            </div>
+
+            <div class="email_contacto">
+                <label for="email"></label>
+                <input type="email" placeholder="Correo electrónico" name="email" id="email_input" required>
+             </div>
+            
+             <div class="telefono_contacto">
+                <label for="name"></label>
+                <input type="text" placeholder="número de contacto" name="telephone" id="telephone_input" required>
+            </div>
+            
+            <div class="subject">
+                <label for="subject"></label>
+                <select placeholder="¿Qué te gustaría decirnos?" name="subject" id="subject_input" required>
+                    <option disabled hidden selected>¿Qué te gustaría decirnos?</option>
+                    <option>Quiero más inofrmación sobre los objetos personalizados</option>
+                    <option>¿Puedo hacer un amigrumi de cualquier persona o mascota?</option>
+                    <option>Quiero cotizar sus servicios</option>
+                </select>
+            </div>
+
+            <div class="message">
+                <label for="message"></label>
+                <textarea name="message" placeholder="Escribe aquí tu mensaje" id="message_input" cols="30" rows="5" required></textarea>
+            </div>
+
+            <div class="subscribe">
+            <form action="../paginas/contacto.html">
+                <button class="btn">Enviar</button>
+            </form>
+        </div>
+
+        </form>
+    </div>
+
+</main>
+    
+    <footer class="footer">
+        <div class="descripcion">
+            <p><strong>Soniacrochetart</strong>
+        </div>
+        <div class="redes">
+            <a href="#"><img src="../img/socials.png" alt="Facebook"></a>
+        </div>
+        <div class="subscribe">
+            <input type="email" placeholder="email...">
+            <form action="../paginas/contacto.html">
+                <button class="btn">Suscríbete</button>
+            </form>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>
